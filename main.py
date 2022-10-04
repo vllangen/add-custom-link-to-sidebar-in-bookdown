@@ -1,5 +1,7 @@
-
-import os, fileinput, glob, sys
+import fileinput
+import glob
+import os
+import sys
 
 filenames = glob.glob('*.html')
 
@@ -21,7 +23,7 @@ else:
 old = '<ul class="summary">'
 
 # The line that will be added to the HTML file(s):
-new = '<li> <a href="https://vldesign.kapsi.fi/r/"><i class="fa fa-language fa-fw"></i> Go to Finnish version<span></span></a></li>'
+new = '<li> <a href="https://fr.yahoo.com/"><i class="fa fa-language fa-fw"></i> Version française<span></span></a></li>'
 
 # Add the new line to all the HTML files in the working folder with the following loop:
 for f in filenames:
@@ -29,4 +31,3 @@ for f in filenames:
         if old in line:
             line += new + os.linesep
         print(line, end="")
-
