@@ -20,7 +20,7 @@ else:
     sys.exit()
 
 # One line of code (that creates the language link) will be added after the following line in the HTML file(s):
-old = '<ul class="summary">'
+hit = '<ul class="summary">'
 
 # The line that will be added to the HTML file(s):
 new = '<li> <a href="https://fr.yahoo.com/"><i class="fa fa-language fa-fw"></i> Version française<span></span></a></li>'
@@ -28,6 +28,6 @@ new = '<li> <a href="https://fr.yahoo.com/"><i class="fa fa-language fa-fw"></i>
 # Add the new line to all the HTML files in the working folder with the following loop:
 for f in filenames:
     for line in fileinput.FileInput(files=f, inplace=True):
-        if old in line:
+        if hit in line:
             line += new + os.linesep
         print(line, end="")
