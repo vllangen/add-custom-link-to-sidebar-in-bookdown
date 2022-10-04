@@ -6,8 +6,8 @@ import sys
 filenames = glob.glob('*.html')
 
 # Confirm that the user wants to process the files:
-print("\nThis is a python app that adds a language link to the sidebar of all HTML files in your working folder.")
-print("Your working folder is:")
+print("\n\n\n\n\n\nThis is a python app that adds a language link to the sidebar of all the HTML files in your working folder.")
+print("\nYour working folder is:")
 print(os.getcwd())
 print("\nThe following HTML files will be immediately processed:", filenames)
 confirming = input('\nDo you want to continue? Press "y" or "Y" to continue or press any other key to cancel\n')
